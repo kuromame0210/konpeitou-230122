@@ -56,18 +56,8 @@ export const Scean3 = ({
     <>
       <div style={{ width: "100%", display: "block", textAlign: "center" }}>
         <img
-          src={conpeitou_image[conpeitouRandom].path} //"/image/omikuji/1-red(title).png"
-          className={
-            CSS.ImageCommon
-            // + " " + CSS.Scean1
-            // +
-            // " " +
-            // `${isClick && CSS.rotateTest180}`
-          }
-          // style={{
-          //   width: "300px",
-          //   marginLeft: "calc(50%-150px)",
-          // }}
+          src={location.pathname + conpeitou_image[conpeitouRandom].path} //"/image/omikuji/1-red(title).png"
+          className={CSS.ImageCommon}
           onMouseUp={() => {
             if (!isClick && time > 1) {
               setSceanCount(3);

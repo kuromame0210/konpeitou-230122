@@ -65,17 +65,8 @@ export const Scean2 = ({
     <>
       <div style={{ width: "100%", display: "block", textAlign: "center" }}>
         <img
-          src={
-            // conpeitou_image_path_orange
-            conpeitou_image[conpeitouRandom].path
-          }
-          className={
-            CSS.ImageCommon
-            // + " " + CSS.Scean1
-            // +
-            // " " +
-            // `${isClick && CSS.rotateTest180}`
-          }
+          src={location.pathname + conpeitou_image[conpeitouRandom].path}
+          className={CSS.ImageCommon}
           onMouseUp={() => {
             if (!isClick && time > 1) {
               setSceanCount(2);
@@ -85,10 +76,7 @@ export const Scean2 = ({
         />
       </div>
       <div className={CSS.scean1SubTitleText}>
-        {
-          // conpeitou_image_text_orange
-          conpeitou_image[conpeitouRandom].text
-        }
+        {conpeitou_image[conpeitouRandom].text}
       </div>
       {time > 1 && (
         <div className={CSS.scean1ClickText}>こんぺいとうをクリックしてね</div>
