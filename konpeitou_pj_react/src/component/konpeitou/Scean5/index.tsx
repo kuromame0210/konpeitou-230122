@@ -19,8 +19,6 @@ export const Scean5 = ({
 
   const [isClick, setIsClick] = useState(false);
 
-  // const conpeitou_image_path = "public/image/omikuji/1-red(title).png";
-
   const conpeitou_image = [
     {
       path: "/image/omikuji/①red(title).png",
@@ -67,7 +65,10 @@ export const Scean5 = ({
       {time > 1 && (
         <>
           <img
-            src={conpeitou_image[conpeitouRandom].conpeitou_path} //"/image/konpeitou/みずいろのコンペイトウ.png"
+            src={
+              location.pathname +
+              conpeitou_image[conpeitouRandom].conpeitou_path
+            }
             style={{
               width: "50px",
               left: "10%",
@@ -77,8 +78,10 @@ export const Scean5 = ({
             className={CSS.conpaitouAnimationSwing}
           />
           <img
-            src={conpeitou_image[conpeitouRandom].conpeitou_path}
-            // "/image/konpeitou/みずいろのコンペイトウ.png"
+            src={
+              location.pathname +
+              conpeitou_image[conpeitouRandom].conpeitou_path
+            }
             style={{
               width: "50px",
               left: "20%",
@@ -87,20 +90,11 @@ export const Scean5 = ({
             }}
             className={CSS.conpaitouAnimationSwing}
           />
-          {/* <img
-            src={conpeitou_image[conpeitouRandom].conpeitou_path}
-            // "/image/konpeitou/みずいろのコンペイトウ.png"
-            style={{
-              width: "50px",
-              left: "50%",
-              top: "-10vh",
-              animationDelay: "4500ms",
-            }}
-            className={CSS.conpaitouAnimationSwing}
-          /> */}
           <img
-            src={conpeitou_image[conpeitouRandom].conpeitou_path}
-            // src="/image/konpeitou/みずいろのコンペイトウ.png"
+            src={
+              location.pathname +
+              conpeitou_image[conpeitouRandom].conpeitou_path
+            }
             style={{
               width: "50px",
               left: "30%",
@@ -110,8 +104,10 @@ export const Scean5 = ({
             className={CSS.conpaitouAnimationSwing}
           />
           <img
-            src={conpeitou_image[conpeitouRandom].conpeitou_path}
-            // src="/image/konpeitou/みずいろのコンペイトウ.png"
+            src={
+              location.pathname +
+              conpeitou_image[conpeitouRandom].conpeitou_path
+            }
             style={{
               width: "50px",
               left: "80%",
@@ -121,32 +117,21 @@ export const Scean5 = ({
             className={CSS.conpaitouAnimationSwing}
           />
           <img
-            src={conpeitou_image[conpeitouRandom].conpeitou_path}
-            // src="/image/konpeitou/みずいろのコンペイトウ.png"
+            src={
+              location.pathname +
+              conpeitou_image[conpeitouRandom].conpeitou_path
+            }
             style={{
               width: "50px",
               left: "70%",
-              // top: "-10vh",
-              // animationDelay: "200ms",
             }}
             className={CSS.conpaitouAnimationSwing}
           />
 
           <div style={{ width: "100%", display: "block", textAlign: "center" }}>
             <img
-              src={conpeitou_image[conpeitouRandom].path}
-              // src="/image/omikuji/1-red(title).png"
-              className={
-                CSS.ImageCommon
-                // + " " + CSS.Scean1
-                // +
-                // " " +
-                // `${isClick && CSS.rotateTest180}`
-              }
-              // style={{
-              //   width: "300px",
-              //   marginLeft: "calc(50%-150px)",
-              // }}
+              src={location.pathname + conpeitou_image[conpeitouRandom].path}
+              className={CSS.ImageCommon}
               onMouseUp={() => {
                 if (!isClick && time > 1) {
                   setSceanCount(5);

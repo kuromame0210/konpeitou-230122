@@ -50,18 +50,8 @@ export const Scean4 = ({
       <div className={CSS.scean1SubTitleText}>占い詳細結果</div>
       <div style={{ width: "100%", display: "block", textAlign: "center" }}>
         <img
-          src={conpeitou_image[conpeitouRandom].path} //"/image/omikuji/①red(content).png"
-          className={
-            CSS.ImageCommon
-            // + " " + CSS.Scean1
-            // +
-            // " " +
-            // `${isClick && CSS.rotateTest180}`
-          }
-          // style={{
-          //   width: "300px",
-          //   marginLeft: "calc(50%-150px)",
-          // }}
+          src={location.pathname + conpeitou_image[conpeitouRandom].path} //"/image/omikuji/①red(content).png"
+          className={CSS.ImageCommon}
           onMouseUp={() => {
             if (!isClick && time > 1) {
               setSceanCount(4);

@@ -16,9 +16,6 @@ export const Scean1 = ({
   console.log("Scean1", { time }); // 出力: 0
 
   const [isClick, setIsClick] = useState(false);
-  // const [isClick, setIsClick] = useState(false);
-
-  const conpeitou_image_path = "/image/image/konpeitou/シュガラブちゃんA.png";
 
   return (
     <>
