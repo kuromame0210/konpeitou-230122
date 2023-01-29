@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 
@@ -37,7 +38,13 @@ export const Scean1 = ({
               setSceanCount(1);
             }
           }}
-        />
+        >
+          <Image
+            src="/image/konpeitou/シュガラブちゃんA.png"
+            alt="Picture of the author"
+            fill
+          />
+        </div>
       </div>
       <div className={CSS.scean1SubTitleText}>コンペイトウ占い</div>
       <div className={CSS.scean1ClickText}>

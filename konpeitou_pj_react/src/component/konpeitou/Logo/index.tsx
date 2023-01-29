@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect } from "react";
 import { useTimer } from "use-timer";
 
@@ -18,6 +19,13 @@ export const Logo: React.FC = () => {
     css_templete = CSS.Logo_delay_opacity_0;
   }
 
+  // console.log(location.hostname);
+
+  // var hostname = location.hostname;
+  // const myLoader = ({ src }: { src: string }) => {
+  //   return `https://${hostname}/${src}`;
+  // };
+
   return (
     <>
       <div
@@ -28,7 +36,23 @@ export const Logo: React.FC = () => {
           " " +
           `${time > 2.0 && CSS.Logo_delay_opacity_0}`
         }
-      />
+      >
+        <Image
+          src="/image/others/コンペイトウミュージアム-ロゴ.png"
+          alt="Picture of the author"
+          fill
+        />
+      </div>
+
+      {/* <div
+        className={
+          CSS.ImageCommon +
+          " " +
+          CSS.Logo +
+          " " +
+          `${time > 2.0 && CSS.Logo_delay_opacity_0}`
+        }
+      /> */}
     </>
   );
 };
