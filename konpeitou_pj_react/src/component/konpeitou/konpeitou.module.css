@@ -1,0 +1,151 @@
+.container {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/image/background/コンペイトウ占い（背景）.jpg");
+}
+
+.LogoWrapper {
+  display: block;
+  margin: auto;
+  padding-top: 20vh;
+  width: 100vw;
+}
+
+.ImageCommon {
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.4s 0.5s ease-in;
+  text-align: center;
+  margin: auto;
+}
+
+.Logo {
+  margin-top: 10vh;
+  width: 80vw;
+  background-image: url("/image/others/コンペイトウミュージアム-ロゴ.png");
+  transition: opacity 0.4s 0.5s ease-in;
+  opacity: 1;
+}
+
+.Scean1 {
+  background-image: url("/image/konpeitou/シュガラブちゃんA.png");
+  opacity: 1;
+  width: 80vw;
+  display: block;
+}
+
+.scean1SubTitleText {
+  text-align: center;
+  margin: 2% 10%;
+  font-size: 2rem;
+}
+
+.scean1ClickText {
+  color: crimson;
+  text-align: center;
+  margin: 2% 10%;
+  font-size: 1.4rem;
+}
+
+.rotateTest180 {
+  transform: rotateY(360deg); /* 回転 */
+  transition: 1.5s;
+}
+
+.Logo_delay_opacity_0 {
+  opacity: 0;
+}
+
+.Logo_delay_opacity_1 {
+  opacity: 1;
+}
+
+.btn3 {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 100vh;
+  margin: 0 5%;
+  transition: 0.5s;
+}
+.btn3:hover {
+  background-color: #27acd9;
+}
+
+.btn3:active {
+  background-color: #27acd9;
+}
+
+@media (max-width: 600px) {
+  .ImageCommon {
+    height: 30vh;
+  }
+  .Scean1 {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 600px) {
+  .Logo {
+    width: 80vw;
+  }
+  .ImageCommon {
+    height: 40vh;
+  }
+  .Scean1 {
+    width: 50vw;
+  }
+  .scean1SubTitleText {
+    font-size: 3rem;
+  }
+
+  .btn3 {
+    font-size: 2.4rem;
+    padding: 2rem;
+    margin: 0 5%;
+  }
+}
+@media (min-width: 1000px) {
+  .Logo {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .Scean1 {
+    width: 30vw;
+  }
+  .scean1SubTitleText {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1450px) {
+  .Logo {
+    width: 40vw;
+  }
+  .Scean1 {
+    width: 25vw;
+  }
+}
+
+/* アニメーションが0%の時は角度が0度で10%の時は角度が10度で・・・以下略 */
+@keyframes konpeitouSwing {
+  from {
+    transform: translateY(-20vh) rotate(0);
+  }
+
+  to {
+    transform: translateY(140vh) rotate(720deg);
+  }
+}
+
+.conpaitouAnimationSwing {
+  position: absolute;
+  left: 45%;
+  transform: translateY(-100px);
+  animation: konpeitouSwing 10s linear infinite;
+}

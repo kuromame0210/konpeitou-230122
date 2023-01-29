@@ -1,0 +1,1 @@
+export { Konpeitou } from "./Konpeitou";
