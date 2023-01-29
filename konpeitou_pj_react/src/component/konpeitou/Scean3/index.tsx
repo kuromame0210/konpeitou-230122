@@ -1,5 +1,4 @@
 import { Image } from "@chakra-ui/react";
-
 import React, { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 

@@ -1,5 +1,6 @@
 import { Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
+import Sound from "react-sound";
 import { useTimer } from "use-timer";
 
 import CSS from "./konpeitou.module.css";
@@ -10,6 +11,8 @@ import { Scean3 } from "./Scean3";
 import { Scean4 } from "./Scean4/index";
 import { Scean5 } from "./Scean5/index";
 import { Scean6 } from "./Scean6/index";
+
+// import BGM from "/Sound/BGM/lovelyflower.mp3";
 
 /*
   1秒後、3秒かけてopacityを0にする。
@@ -63,8 +66,24 @@ export const Konpeitou: React.FC = () => {
   console.log({ sceanCount });
   const [conpeitouRandom, setconpeitouRandom] = useState<number>(0);
 
+  const [SoundStatus, setSoundStatus] = useState("STOPPED");
+
+  // const handleSoundPlay = () => {
+  //   setSoundStatus(Sound.status.PLAYING);
+  // };
+
   return (
     <>
+      {/* <audio id="a1" src="../../../Sound/BGM/lovelyflower.mp3"></audio> */}
+      <audio id="a1" autoPlay preload="auto">
+        <source src="/Sound/BGM/lovelyflower.mp3" />
+      </audio>
+      {/* <Sound
+        url={"../../../public/Sound/BGM/lovelyflower.mp3"}
+        autoLoad={true}
+        playStatus={"PLAYING"}
+        playFromPosition={0}
+      /> */}
       <Image
         alt="container"
         src="/image/background/コンペイトウ占い（背景）.JPG"
