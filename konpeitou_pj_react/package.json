@@ -6,9 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export",
+    "serve": "yarn export && serve ./out"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.4",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
@@ -16,11 +21,15 @@
     "eslint": "^8.32.0",
     "eslint-config-next": "13.1.4",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "framer-motion": "^8.5.4",
     "next": "13.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4",
     "use-sound": "^4.0.1",
     "use-timer": "^2.0.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
   }
 }

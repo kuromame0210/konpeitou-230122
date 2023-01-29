@@ -1,8 +1,9 @@
-import Image from "next/image";
+import { Image } from "@chakra-ui/react";
+// import Image from "next/image";
 import React, { useEffect } from "react";
 import { useTimer } from "use-timer";
 
-import LogoImage from "../../../../public/image/others/コンペイトウミュージアム-ロゴ.png";
+// import LogoImage from "../../../../public/image/others/コンペイトウミュージアム-ロゴ.png";
 import CSS from "../konpeitou.module.css";
 
 export const Logo: React.FC = () => {
@@ -22,7 +23,7 @@ export const Logo: React.FC = () => {
 
   return (
     <>
-      <div
+      <Image
         className={
           CSS.ImageCommon +
           " " +
@@ -30,9 +31,9 @@ export const Logo: React.FC = () => {
           " " +
           `${time > 2.0 && CSS.Logo_delay_opacity_0}`
         }
-      >
-        <Image src={LogoImage} alt="Picture of the author" fill />
-      </div>
+        src="/image/others/コンペイトウミュージアム-ロゴ.png"
+        alt="ssssssss"
+      />
 
       {/* <div
         className={

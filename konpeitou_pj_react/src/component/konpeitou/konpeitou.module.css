@@ -1,12 +1,24 @@
 .container {
+  /* position: absolute; */
+  /* background-attachment: fixed; */
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -10;
   /* background-image: url("/image/background/コンペイトウ占い（背景）.JPG"); */
   /* background-image: url("https://konpeitou-230122-el9eaalgj-kuromame0210.vercel.app/image/background/コンペイトウ占い（背景）.JPG"); */
 }
 
 .LogoWrapper {
+  display: block;
+  margin: auto;
+  padding-top: 20vh;
+  width: 100vw;
+}
+
+.ContaintWrapper {
+  position: absolute;
+  top: 0;
   display: block;
   margin: auto;
   padding-top: 20vh;
@@ -25,7 +37,7 @@
 .Logo {
   margin-top: 10vh;
   width: 80vw;
-  position: relative;
+  /* position: relative; */
   /* background-image: url("/image/others/コンペイトウミュージアム-ロゴ.png"); */
   /* background-image: url("https://konpeitou-230122-el9eaalgj-kuromame0210.vercel.app/image/others/コンペイトウミュージアム-ロゴ.png"); */
   transition: opacity 0.4s 0.5s ease-in;
@@ -35,7 +47,7 @@
 .Scean1 {
   /* background-image: url("/image/konpeitou/シュガラブちゃんA.png"); */
   /* background-image: url("https://konpeitou-230122-el9eaalgj-kuromame0210.vercel.app/image/konpeitou/シュガラブちゃんA.png"); */
-  position: relative;
+  /* position: relative; */
   opacity: 1;
   width: 80vw;
   display: block;

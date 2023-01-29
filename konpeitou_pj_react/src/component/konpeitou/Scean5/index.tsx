@@ -1,3 +1,4 @@
+import { Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 
@@ -64,11 +65,9 @@ export const Scean5 = ({
 
       {time > 1 && (
         <>
-          <img
-            src={
-              location.pathname +
-              conpeitou_image[conpeitouRandom].conpeitou_path
-            }
+          <Image
+            alt="Screen5_conpeitou1"
+            src={conpeitou_image[conpeitouRandom].conpeitou_path}
             style={{
               width: "50px",
               left: "10%",
@@ -77,11 +76,9 @@ export const Scean5 = ({
             }}
             className={CSS.conpaitouAnimationSwing}
           />
-          <img
-            src={
-              location.pathname +
-              conpeitou_image[conpeitouRandom].conpeitou_path
-            }
+          <Image
+            alt="Screen5_conpeitou2"
+            src={conpeitou_image[conpeitouRandom].conpeitou_path}
             style={{
               width: "50px",
               left: "20%",
@@ -90,11 +87,9 @@ export const Scean5 = ({
             }}
             className={CSS.conpaitouAnimationSwing}
           />
-          <img
-            src={
-              location.pathname +
-              conpeitou_image[conpeitouRandom].conpeitou_path
-            }
+          <Image
+            alt="Screen5_conpeitou3"
+            src={conpeitou_image[conpeitouRandom].conpeitou_path}
             style={{
               width: "50px",
               left: "30%",
@@ -103,11 +98,9 @@ export const Scean5 = ({
             }}
             className={CSS.conpaitouAnimationSwing}
           />
-          <img
-            src={
-              location.pathname +
-              conpeitou_image[conpeitouRandom].conpeitou_path
-            }
+          <Image
+            alt="Screen5_conpeitou3"
+            src={conpeitou_image[conpeitouRandom].conpeitou_path}
             style={{
               width: "50px",
               left: "80%",
@@ -116,11 +109,9 @@ export const Scean5 = ({
             }}
             className={CSS.conpaitouAnimationSwing}
           />
-          <img
-            src={
-              location.pathname +
-              conpeitou_image[conpeitouRandom].conpeitou_path
-            }
+          <Image
+            alt="Screen5_conpeitou4"
+            src={conpeitou_image[conpeitouRandom].conpeitou_path}
             style={{
               width: "50px",
               left: "70%",
@@ -129,8 +120,9 @@ export const Scean5 = ({
           />
 
           <div style={{ width: "100%", display: "block", textAlign: "center" }}>
-            <img
-              src={location.pathname + conpeitou_image[conpeitouRandom].path}
+            <Image
+              alt="Screen5_main"
+              src={conpeitou_image[conpeitouRandom].path}
               className={CSS.ImageCommon}
               onMouseUp={() => {
                 if (!isClick && time > 1) {

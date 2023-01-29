@@ -1,4 +1,5 @@
-import Image from "next/image";
+// import Image from "next/image";
+import { Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 
@@ -21,7 +22,9 @@ export const Scean1 = ({
   return (
     <>
       <div style={{ width: "100%", display: "block", textAlign: "center" }}>
-        <div
+        <Image
+          src="/image/konpeitou/シュガラブちゃんA.png"
+          alt="Picture of the author"
           className={
             CSS.ImageCommon +
             " " +
@@ -39,12 +42,12 @@ export const Scean1 = ({
             }
           }}
         >
-          <Image
+          {/* <Image
             src="/image/konpeitou/シュガラブちゃんA.png"
             alt="Picture of the author"
-            fill
-          />
-        </div>
+            // fill
+          /> */}
+        </Image>
       </div>
       <div className={CSS.scean1SubTitleText}>コンペイトウ占い</div>
       <div className={CSS.scean1ClickText}>

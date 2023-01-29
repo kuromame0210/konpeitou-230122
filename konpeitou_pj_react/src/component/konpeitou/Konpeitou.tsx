@@ -1,3 +1,4 @@
+import { Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 
@@ -56,53 +57,60 @@ export const Konpeitou: React.FC = () => {
   useEffect(() => {
     start();
   }, [start]);
-  // console.log(time);
+  console.log({ time });
 
   const [sceanCount, setSceanCount] = useState<number>(0);
   console.log({ sceanCount });
   const [conpeitouRandom, setconpeitouRandom] = useState<number>(0);
 
   return (
-    <div className={CSS.container}>
-      <div className={CSS.LogoWrapper} />
+    <>
+      <Image
+        alt="container"
+        src="/image/background/コンペイトウ占い（背景）.JPG"
+        className={CSS.container}
+      />
+      <div className={CSS.ContaintWrapper}>
+        {/* <div className={CSS.LogoWrapper} /> */}
 
-      {(() => {
-        if (time < 4) return <Logo />;
-        else if (time > 3 && sceanCount === 0)
-          return <Scean1 setSceanCount={setSceanCount} />;
-        else if (sceanCount === 1)
-          return (
-            <Scean2
-              setSceanCount={setSceanCount}
-              conpeitouRandom={conpeitouRandom}
-              setconpeitouRandom={setconpeitouRandom}
-            />
-          );
-        else if (sceanCount === 2)
-          return (
-            <Scean3
-              setSceanCount={setSceanCount}
-              conpeitouRandom={conpeitouRandom}
-            />
-          );
-        else if (sceanCount === 3)
-          return (
-            <Scean4
-              setSceanCount={setSceanCount}
-              conpeitouRandom={conpeitouRandom}
-            />
-          );
-        else if (sceanCount === 4)
-          return (
-            <Scean5
-              setSceanCount={setSceanCount}
-              conpeitouRandom={conpeitouRandom}
-            />
-          );
-        else if (sceanCount === 5)
-          return <Scean6 setSceanCount={setSceanCount} />;
-        else return <p>C</p>;
-      })()}
-    </div>
+        {(() => {
+          if (time < 4) return <Logo />;
+          else if (time > 3 && sceanCount === 0)
+            return <Scean1 setSceanCount={setSceanCount} />;
+          else if (sceanCount === 1)
+            return (
+              <Scean2
+                setSceanCount={setSceanCount}
+                conpeitouRandom={conpeitouRandom}
+                setconpeitouRandom={setconpeitouRandom}
+              />
+            );
+          else if (sceanCount === 2)
+            return (
+              <Scean3
+                setSceanCount={setSceanCount}
+                conpeitouRandom={conpeitouRandom}
+              />
+            );
+          else if (sceanCount === 3)
+            return (
+              <Scean4
+                setSceanCount={setSceanCount}
+                conpeitouRandom={conpeitouRandom}
+              />
+            );
+          else if (sceanCount === 4)
+            return (
+              <Scean5
+                setSceanCount={setSceanCount}
+                conpeitouRandom={conpeitouRandom}
+              />
+            );
+          else if (sceanCount === 5)
+            return <Scean6 setSceanCount={setSceanCount} />;
+          else return <p>C</p>;
+        })()}
+      </div>
+    </>
   );
 };

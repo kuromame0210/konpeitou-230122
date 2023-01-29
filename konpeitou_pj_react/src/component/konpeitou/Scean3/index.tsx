@@ -1,3 +1,5 @@
+import { Image } from "@chakra-ui/react";
+
 import React, { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 
@@ -19,7 +21,7 @@ export const Scean3 = ({
 
   const [isClick, setIsClick] = useState(false);
 
-  const conpeitou_image_path = "public/image/omikuji/1-red(title).png";
+  // const conpeitou_image_path = "public/image/omikuji/1-red(title).png";
 
   const conpeitou_image = [
     {
@@ -55,8 +57,9 @@ export const Scean3 = ({
   return (
     <>
       <div style={{ width: "100%", display: "block", textAlign: "center" }}>
-        <img
-          src={location.pathname + conpeitou_image[conpeitouRandom].path} //"/image/omikuji/1-red(title).png"
+        <Image
+          alt="Screen3"
+          src={conpeitou_image[conpeitouRandom].path} //"/image/omikuji/1-red(title).png"
           className={CSS.ImageCommon}
           onMouseUp={() => {
             if (!isClick && time > 1) {

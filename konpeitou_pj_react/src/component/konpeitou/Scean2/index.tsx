@@ -1,3 +1,4 @@
+import { Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 
@@ -64,8 +65,9 @@ export const Scean2 = ({
   return (
     <>
       <div style={{ width: "100%", display: "block", textAlign: "center" }}>
-        <img
-          src={location.pathname + conpeitou_image[conpeitouRandom].path}
+        <Image
+          alt="Scean2"
+          src={conpeitou_image[conpeitouRandom].path}
           className={CSS.ImageCommon}
           onMouseUp={() => {
             if (!isClick && time > 1) {
