@@ -19,10 +19,10 @@ const nextConfig = {
 module.exports = nextConfig
 
 
-config.module.rules.push({
-  test: /\.(mp3)$/,
-  use: {
-    loader: 'file-loader', 
-  },
-});
+// config.module.rules.push({
+//   test: /\.(mp3)$/,
+//   use: {
+//     loader: 'file-loader', 
+//   },
+// });
 

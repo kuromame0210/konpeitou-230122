@@ -86,7 +86,7 @@ export const Konpeitou: React.FC = () => {
       /> */}
       <Image
         alt="container"
-        src="/image/background/コンペイトウ占い（背景）.JPG"
+        src="http://curogames.sakura.ne.jp/konpeitou-web/konpeitou-background.jpg"
         className={CSS.container}
       />
       <div className={CSS.ContaintWrapper}>
@@ -133,3 +133,14 @@ export const Konpeitou: React.FC = () => {
     </>
   );
 };
+
+/*
+
+http://curogames.sakura.ne.jp/konpeitou-web/yellow-konpeitou.png
+http://curogames.sakura.ne.jp/konpeitou-web/shugalove-chan.png
+http://curogames.sakura.ne.jp/konpeitou-web/shugalove-chan-B.png
+http://curogames.sakura.ne.jp/konpeitou-web/red-konpeitou.png
+
+
+
+*/

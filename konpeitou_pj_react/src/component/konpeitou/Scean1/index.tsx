@@ -23,7 +23,7 @@ export const Scean1 = ({
     <>
       <div style={{ width: "100%", display: "block", textAlign: "center" }}>
         <Image
-          src="/image/konpeitou/シュガラブちゃんA.png"
+          src="http://curogames.sakura.ne.jp/konpeitou-web/shugalove-chan-B.png"
           alt="Picture of the author"
           className={
             CSS.ImageCommon +

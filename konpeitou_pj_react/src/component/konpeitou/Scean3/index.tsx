@@ -24,31 +24,31 @@ export const Scean3 = ({
 
   const conpeitou_image = [
     {
-      path: "/image/omikuji/①red(title).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/1-red(title).png",
       text: "超幸運",
     },
     {
-      path: "/image/omikuji/②orange(title).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/2-orange(title).png",
       text: "成長運",
     },
     {
-      path: "/image/omikuji/③yellow(title).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/3-yellow(title).png",
       text: "黄金吉",
     },
     {
-      path: "/image/omikuji/④green(title).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/4-green(title).png",
       text: "平和運",
     },
     {
-      path: "/image/omikuji/⑤blue(title).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/5-blue(title).png",
       text: "仕事吉",
     },
     {
-      path: "/image/omikuji/⑥purple(title).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/6-purple(title).png",
       text: "夢運",
     },
     {
-      path: "/image/omikuji/⑦pink(title).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/7-pink(title).png",
       text: "恋吉",
     },
   ];

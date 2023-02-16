@@ -31,19 +31,10 @@ export const Logo: React.FC = () => {
           " " +
           `${time > 2.0 && CSS.Logo_delay_opacity_0}`
         }
-        src="/image/others/コンペイトウミュージアム-ロゴ.png"
+        // src="/image/others/コンペイトウミュージアム-ロゴ.png"
+        src="http://curogames.sakura.ne.jp/konpeitou-web/konpeitou-musium-logo.png"
         alt="ssssssss"
       />
-
-      {/* <div
-        className={
-          CSS.ImageCommon +
-          " " +
-          CSS.Logo +
-          " " +
-          `${time > 2.0 && CSS.Logo_delay_opacity_0}`
-        }
-      /> */}
     </>
   );
 };

@@ -24,25 +24,25 @@ export const Scean4 = ({
 
   const conpeitou_image = [
     {
-      path: "/image/omikuji/①red(content).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/1-red(content).png",
     },
     {
-      path: "/image/omikuji/②orange(content).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/2-orange(content).png",
     },
     {
-      path: "/image/omikuji/③yellow(content).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/3-yellow(content).png",
     },
     {
-      path: "/image/omikuji/④green(content).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/4-green(content).png",
     },
     {
-      path: "/image/omikuji/⑤blue(content).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/5-blue(content).png",
     },
     {
-      path: "/image/omikuji/⑥purple(content).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/6-purple(content).png",
     },
     {
-      path: "/image/omikuji/⑦pink(content).png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/7-pink(content).png",
     },
   ];
 

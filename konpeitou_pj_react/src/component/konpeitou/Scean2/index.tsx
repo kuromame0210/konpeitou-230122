@@ -26,31 +26,31 @@ export const Scean2 = ({
 
   const conpeitou_image = [
     {
-      path: "/image/konpeitou/赤色のコンペイトウ.png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/red-konpeitou.png",
       text: "赤色のコンペイトウ",
     },
     {
-      path: "/image/konpeitou/オレンジ色のコンペイトウ.png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/orange-conpeitou.png",
       text: "オレンジいろのこんぺいとう",
     },
     {
-      path: "/image/konpeitou/きいろのコンペイトウ.png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/yellow-konpeitou.png",
       text: "きいろのコンペイトウ",
     },
     {
-      path: "/image/konpeitou/きみどり色のコンペイトウ.png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/greenyellow-konpeitou.png",
       text: "きみどり色のコンペイトウ",
     },
     {
-      path: "/image/konpeitou/みずいろのコンペイトウ.png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/mizuiro-konpeitou.png",
       text: "みずいろのコンペイトウ",
     },
     {
-      path: "/image/konpeitou/むらさき色のコンペイトウ.png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/murasaki-konpeitou.png",
       text: "むらさき色のコンペイトウ",
     },
     {
-      path: "/image/konpeitou/ピンク色のコンペイトウ.png",
+      path: "http://curogames.sakura.ne.jp/konpeitou-web/pink-konpeitou.png",
       text: "ピンク色のコンペイトウ",
     },
   ];
